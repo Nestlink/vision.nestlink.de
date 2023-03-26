@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - '3000:3000'
+    networks:
+      - traefik
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.port=3000'
+      - 'traefik.http.routers.visionnestlinkde.rule=Host(`vision.nestlink.de`)'
+      - 'traefik.http.routers.visionnestlinkde.entrypoints=websecure'
+      - 'traefik.http.routers.visionnestlinkde.tls.certresolver=letsencrypt'
+    volumes:
+      - ./prisma/waitlist.db:/app/prisma/waitlist.db
+
+networks:
+  traefik:
+    external: true

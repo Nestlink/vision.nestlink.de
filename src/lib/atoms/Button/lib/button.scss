@@ -1,0 +1,37 @@
+@use '$scss/hover.scss' as *;
+
+@mixin custom($color, $base, $active) {
+	color: $color;
+
+	background-color: $base;
+
+	&.active,
+	&:active {
+		background-color: $active;
+	}
+
+	&:focus-visible {
+		transform: scale(0.97);
+	}
+
+	@include hover() {
+		transform: scale(0.97);
+	}
+}
+
+@mixin button {
+	padding: 0 1.5rem;
+	display: block;
+	height: 3.75rem;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	width: 100%;
+	letter-spacing: 0.05rem;
+	cursor: pointer;
+	color: white;
+
+	transition: transform 0.1s ease-in-out;
+
+	@include custom(white, #006dff, #0046a3);
+}

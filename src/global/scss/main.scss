@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'Manrope';
+	src: url('./font/Manrope-Medium.ttf') format('truetype');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('./font/Manrope-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('./font/Manrope-Bold.ttf') format('truetype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('./font/Manrope-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+}
+
+* {
+	box-sizing: border-box;
+
+	font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-weight: 500;
+	font-size: 16px;
+}
+
+:root {
+	--lightgrey: #f1f1f1;
+}
+
+// html {
+// 	scroll-behavior: smooth;
+// }
+
+body {
+	margin: 0;
+}
+
+input,
+textarea {
+	appearance: none;
+	margin: 0;
+}
+
+img,
+svg {
+	display: block;
+}

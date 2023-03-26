@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "User" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "date" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "email" TEXT NOT NULL,
+    "newsletter" BOOLEAN NOT NULL,
+    "waitlist" BOOLEAN NOT NULL
+);
