@@ -33,7 +33,7 @@ npm run dev -- --open
 
 ## Deploy
 
-This repository is configured to run behind a [traefik](https://traefik.io/traefik/) reverse proxy. \
+This app is configured to run behind a [traefik](https://traefik.io/traefik/) reverse proxy. \
 Before building, ensure an environment file is present in the root directory.
 
 ```bash
