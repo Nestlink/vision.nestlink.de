@@ -15,7 +15,6 @@ RUN npx prisma migrate deploy
 COPY /src /app/src
 COPY /static /app/static
 COPY postcss.config.cjs /app/
-COPY sass-alias.js /app/
 COPY svelte.config.js /app/
 COPY vite.config.ts /app/
 
